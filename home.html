@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Info</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="features.html">Features</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Video</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="album.html">Gallery</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="pictures/IMG_7403.jpg"  alt="responsive image">
+            <div class="container">
+              <div class="carousel-caption text-left">
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+        
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="pick.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Pick</h2>
+            <p>In this mode the user presses a fret and the pick a the same time to play notes.</p>
+            <p><a class="btn btn-secondary" href="features.html" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="legato.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Legato</h2>
+            <p class = "lead">In this mode the picks are disabled, and you can fret strings and play legato and slide lines. Optionally you can enable the proximity sensor to do picthbends and theremin like effect or use the keypad controller to play two different instruments at the same time.</p>
+            <p><a class="btn btn-secondary" href="features.html" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="slide.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Legato+Pick</h2>
+            <p>This mode turns the picks on and let you do legato lines. </p>
+            <p><a class="btn btn-secondary" href="features.html" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-10">
+            <h2 class="featurette-heading">Design Motivation</h2>
+            <p class="lead">As a guitar player, I feel limited when I work with DAWs and software insturments. Commerical MIDI controllers are based on keyboard and I did not feel at home when I use them. I needed a MIDI device that would have controls similar to a guitar and yet have the capability to control a DAW. This need drove me to design the Digital SuperStrat. Digital SuperStrat enables a guitar players to interact with DAWs or other software instruments, without leaving the comfort of playing guitar. It can be used as compositional tool or can be used in a live performace.   </p>
+          </div>
+          
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-10">
+            <h2 class="featurette-heading">Technology Used</h2>
+              <p class="lead">The brain of this instrument is a Teensy 3.6 microcontroller. I chose to use a Teensy, because it provides USB MIDI support. That means any computer with MIDI support will recognize the device without using additional hardware or software. With one micro-usb cable, the Digital SuperStrat can be powered and connected to a computer.</p>
+              <p class = "lead">The working principle of the insrument is very simple. As you play the instrument, Teensy recieves signals from the sensors and converts these to MIDI messages that a computer can understand.Also to note, this instrument does not generate sound on its own. It sends performance data. This gives the user the freedom to produce a vast array of sounds using a DAW or a software instrument. I chose to program the Teensy using Arduino IDE in C. That made it easier to interface with the sensors and use the Arduino Platform. </p>
+              <p class = "lead">I used an old stratocaster style guitar to fit the electronics and had to expand the pickup cavity in order to accomodate the circuit. I laser cut a custom pickguard from clear acyrlic to expose the circuit board and wires to give the insturment a DIY feel. 3 linear softpot potentiometers act as "strings". 3 Force Sensitive Resistors act as "picks". A joystick module is used to control modulation and pitchbend. Two Adarfruit Trellis work as a keypad controller. A proximity sensor is used to control pitchbend. Finally, there are total of 6 potentiometers. The knobs and the casing for the keypad are 3D printed.</p>
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-10">
+            <h2 class="featurette-heading">Lessons and Future Improvement</h2>
+            <p class="lead">The greatest challenge in building the Digital SuperStrat was to mitigate the noise from the sensors. In order to achieve this I've used decoupling capacitors as a hardware solution.Unfortunately, this was not enough to reduce the noise. To further eliminate noise, I've used a library called Responsive Analog Read, which implements a signal processing algorithm to reduce noise from analog readings and implemented an software exponential filter.In the future, more reliable components should be used to eliminate this problem.</p>
+            <p class="lead">I've used an old guitar to fit the circuit and I believe it gave the project an interesting touch but in the future I would consider to design a body that is smaller and made from a lighter material. In addition, I think all the electronics can be implemented as an embedded system. This would reduce the size of the circuit board and make it more roburst. Most importantly, the design should be modular. That means parts such as the neck could be easily removed. This would enable the user to carry the instrument without needing a bulky guitar case.  </p>
+            <p class="lead">Overall, I think that I gained a lot of skill in 3D printing, operating machinery and interfacing with hardware using microcontrollers and making design desicions based on the requirements and time limits.</p>
+          </div>
+          
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script> window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+  </body>
+</html>
